@@ -1,0 +1,65 @@
+Chapter 1
+1.6
+	Intermission
+		1b
+		2c
+		3b
+
+1.11
+	Combinators
+		1 yes
+		2 no
+		3 yes
+		4 yes
+		5 no
+
+	Normal form or diverge?
+		1 normal
+		2 diverge
+		3 normal
+
+	Beta reduce
+		1 	(𝜆abc.cba)zz(𝜆wv.w)
+			(𝜆a.𝜆b.𝜆c.cba)zz(𝜆w.𝜆v.w)
+			(𝜆b.𝜆c.cbz)z(𝜆w.𝜆v.w)
+			(𝜆c.czz)(𝜆w.𝜆v.w)
+			(𝜆w.𝜆v.w)zz
+			(𝜆v.z)z
+			z
+
+		2	(𝜆x.𝜆y.xyy)(𝜆a.a)b
+			(𝜆y.(𝜆a.a)yy)b
+			(𝜆a.a)bb
+			bb
+
+		3 	(𝜆y.y)(𝜆x.xx)(𝜆z.zq)
+			(𝜆x.xx)(𝜆z.zq)
+			(𝜆z.zq)(𝜆z.zq)
+			(𝜆z.zq)q
+			qq
+
+		4	(𝜆z.z)(𝜆z.zz)(𝜆z.zy) Hint: alpha equivalence. 
+			(𝜆z.zz)(𝜆z.zy)
+			(𝜆z.zy)(𝜆z.zy)
+			(𝜆z.zy)y
+			yy
+
+		5	(𝜆x.𝜆y.xyy)(𝜆y.y)y
+			(𝜆y.(𝜆y.y)yy)y
+			(𝜆y.y)yy
+			yy
+
+		6	(𝜆a.aa)(𝜆b.ba)c
+			(𝜆b.ba)(𝜆b.ba)c
+			((𝜆b.ba)a)c
+			aac
+
+		7	(𝜆xyz.xz(yz))(𝜆x.z)(𝜆x.a)
+			(𝜆x.𝜆y.𝜆z.xz(yz))(𝜆x.z)(𝜆x.a)
+			(𝜆y.𝜆z.(𝜆x.z)z(yz))(𝜆x.a)
+			𝜆z.(𝜆x.z)z((𝜆x.a)z)
+			𝜆z.z((𝜆x.a)z)
+			𝜆z.za
+
+
+
