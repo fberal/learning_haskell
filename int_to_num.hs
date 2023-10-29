@@ -1,6 +1,6 @@
--- test_on_type.hs
+-- int_to_num.hs
 
-module TestOnType where
+module IntToNum where
 
 -- objectif : réussir à faire des opérations entre un nombre Fractional et un nombre de type Int (via la fonction length)
 -- dit autrement : on cherche à passer du type Int au type Num
