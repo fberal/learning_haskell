@@ -7,11 +7,11 @@ import Data.List (sort) -- import statements need to be at the beginning of a fi
 
   -- 1. The Eq class 
     -- c) makes equality tests possible
-  -- 2. the type class Ord
+  -- 2. The type class Ord
     -- b) is a subclass of Eq
   -- 3. Suppose the type class Ord has an operator >. What is the type of >?
     -- a) Ord a => a -> a -> Bool
-  -- 4. Inx = divMod 16 12 
+  -- 4. In x = divMod 16 12 
     -- c) the type of x is a tuple.
   -- 5. The type class Integral includes
     -- a) Int and Integer numbers.
